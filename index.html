@@ -55,9 +55,20 @@
     <main>
     <!-- Банер -->  
         <section class="hero section">
-          <div class="container">
-            <h1 class="hero-main">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА<br></h1>
-          <button class="hero-btn main-btn" type="button">Заказать услугу</button>
+          <div class="container modal-container">
+           <h1 class="hero-main">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА<br></h1>
+             <button data-modal-open class="hero-btn main-btn" type="button">Заказать услугу</button>
+              <div class="backdrop is-hidden" data-modal>
+               <div class="modal">
+                <p>
+                 </p>
+                  <button data-modal-close class="modal-btn" type="button">
+                   <svg class="close-x" width="11px" height="11px">
+                    <use href="./images/svg/x.svg"></use>
+                   </svg>
+                  </button>
+               </div>
+              </div>
           </div>
         </section>
 
@@ -401,5 +412,7 @@
 </div>
 </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -121,10 +121,12 @@ body {
 .header-link:hover,
 .header-link:focus {
   color: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover .link-svg {
   fill: var;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list .header-item {
@@ -138,6 +140,7 @@ body {
 .header-navigation:hover,
 .header-navigation:focus {
   color: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav {
@@ -171,6 +174,7 @@ body {
 .header-navigation:hover .link-svg,
 .header-navigation:focus .link-svg {
   fill: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Баннер */
@@ -210,6 +214,7 @@ body {
 .hero-btn:hover {
   color: var(--main-clr);
   background: var(--button-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn {
@@ -221,6 +226,48 @@ body {
   margin-top: 30px;
   padding: 10px 32px;
 }
+
+.close-x {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+background-image: url(../images/svg/x.svg);
+
+}
+
+.backdrop {
+position: absolute;
+width: 528px;
+height: 581px;
+left: 494px;
+top: 221px;
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+visibility: visible;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* Абзацы */
 .paragraph-main {
   font-family: var(--main-font);
@@ -403,11 +450,14 @@ img {
 .people-svg:hover,
 .people-svg:focus {
   background-color: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .people-svg:hover .people-team-svg,
 .people-svg:focus .people-team-svg {
   fill: var(--light-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Клиенты */
@@ -433,6 +483,7 @@ img {
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
   fill: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients .clients-link {
@@ -452,6 +503,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Подвал */
@@ -478,6 +530,7 @@ img {
 .footer-phone:hover,
 .footer-phone:focus {
   color: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo-web {
@@ -566,6 +619,7 @@ img {
 .join-list .join-svg:hover,
 .join-list .join-svg:focus {
   background-color: var(--blue-clr);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфолио */
@@ -584,6 +638,7 @@ img {
   background: var(--blue-clr);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-main {
@@ -651,4 +706,5 @@ img {
 .portfolio-box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
