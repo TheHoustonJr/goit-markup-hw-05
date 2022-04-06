@@ -198,15 +198,16 @@ body {
 
 /* Баннер */
 .hero {
-  background-position: center;
   background-repeat: no-repeat;
   height: 600px;
+  width: 1600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
     url(../images/background.jpg);
+    margin: auto;
 }
 
 .hero-main {
